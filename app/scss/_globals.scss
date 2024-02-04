@@ -1,0 +1,41 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: $font-md;
+  font-family: "Oswald";
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: $color-0;
+  font-size: $font-md;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}

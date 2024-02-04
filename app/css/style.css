@@ -1,0 +1,80 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Oswald";
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: #232222;
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.header__nav {
+  padding-top: 15px;
+}
+.header__logo img:nth-child(1) {
+  width: 60px;
+}
+.header__logo img:nth-child(2) {
+  width: 30px;
+}
+.header__links {
+  text-transform: uppercase;
+}
+.header__links a {
+  position: relative;
+}
+.header__links a:not(:last-child) {
+  margin-right: 30px;
+}
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #c9a488;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+.header__links a:hover::before {
+  opacity: 1;
+}
+.header__icons i {
+  font-size: 17px;
+}
+.header__icons i:not(:last-child) {
+  margin-right: 10px;
+}/*# sourceMappingURL=style.css.map */

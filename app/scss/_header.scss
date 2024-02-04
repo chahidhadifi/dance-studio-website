@@ -1,0 +1,56 @@
+.header {
+  &__nav {
+    padding-top: 15px;
+  }
+
+  &__logo {
+    img:nth-child(1) {
+      width: 60px;
+    }
+
+    img:nth-child(2) {
+      width: 30px;
+    }
+  }
+
+  &__links {
+    text-transform: uppercase;
+
+    a {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: $color-1;
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__icons {
+    i {
+      font-size: 17px;
+    }
+    i:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
