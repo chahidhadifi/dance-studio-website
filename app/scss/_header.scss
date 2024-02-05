@@ -1,4 +1,9 @@
 .header {
+  @include breakpoint-down(medium) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   &__nav {
     padding-top: 15px;
   }
@@ -48,9 +53,57 @@
   &__icons {
     i {
       font-size: 17px;
+      cursor: pointer;
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        color: $color-1;
+      }
     }
+
     i:not(:last-child) {
       margin-right: 10px;
+    }
+  }
+
+  &__toggle {
+    i {
+      font-size: 17px;
+    }
+
+    i:nth-child(2) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    margin-top: 20px;
+    height: 100vh;
+    position: relative;
+    display: none;
+
+    i {
+      font-size: 17px;
+    }
+
+    &_container {
+      text-align: center;
+      height: 300px;
+      display: block;
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      left: 10%;
+      right: 10%;
+
+      a {
+        display: block;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }

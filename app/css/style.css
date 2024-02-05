@@ -38,6 +38,24 @@ a {
   padding-right: 100px;
 }
 
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .header__nav {
   padding-top: 15px;
 }
@@ -74,7 +92,68 @@ a {
 }
 .header__icons i {
   font-size: 17px;
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+}
+.header__icons i:hover {
+  color: #c9a488;
 }
 .header__icons i:not(:last-child) {
   margin-right: 10px;
+}
+.header__toggle i {
+  font-size: 17px;
+}
+.header__toggle i:nth-child(2) {
+  display: none;
+}
+.header__menu {
+  margin-top: 20px;
+  height: 100vh;
+  position: relative;
+  display: none;
+}
+.header__menu i {
+  font-size: 17px;
+}
+.header__menu_container {
+  text-align: center;
+  height: 300px;
+  display: block;
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+}
+.header__menu_container a {
+  display: block;
+  text-transform: uppercase;
+}
+.header__menu_container a:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 300ms ease-in-out forwards;
 }/*# sourceMappingURL=style.css.map */

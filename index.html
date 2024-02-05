@@ -36,7 +36,7 @@
           <img src="images/dance.png" alt="" />
           <img src="images/icon.png" alt="" />
         </div>
-        <div class="header__links">
+        <div class="header__links hide-for-mobile">
           <a href="http://">home</a>
           <a href="http://">about</a>
           <a href="http://">videos</a>
@@ -44,13 +44,39 @@
           <a href="http://">blog</a>
           <a href="http://">contact us</a>
         </div>
-        <div class="header__icons">
+        <div class="header__icons hide-for-mobile">
           <i class="bx bx-search"></i>
           <i class="bx bxs-cart-alt"></i>
-          <i class="bx bx-menu"></i>
+        </div>
+        <div class="header__toggle hide-for-desktop">
+          <i class="bx bx-menu" id="open-menu"></i>
+          <i class="bx bx-x" id="close-menu"></i>
         </div>
       </nav>
     </header>
+
+    <!-- header menu -->
+    <div class="header__menu" id="menu">
+      <div class="header__menu_container">
+        <a href="http://">home</a>
+        <a href="http://">about</a>
+        <a href="http://">videos</a>
+        <a href="http://">shop</a>
+        <a href="http://">blog</a>
+        <a href="http://">contact us</a>
+        <div class="header__menu_container_icons">
+          <i class="bx bx-search"></i>
+          <i class="bx bxs-cart-alt"></i>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe
+      ipsa, cupiditate dolor hic officiis repellat facere, nisi praesentium
+      temporibus maiores a optio, consequuntur voluptas itaque tenetur
+      repellendus quo! Corrupti.
+    </p>
 
     <!-- js -->
     <script src="app/js/script.js"></script>
