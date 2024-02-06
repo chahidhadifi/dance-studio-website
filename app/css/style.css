@@ -12,6 +12,7 @@ html {
 body {
   font-size: 14px;
   font-family: "Oswald";
+  color: #232222;
   margin: 0;
   padding: 0;
   background-color: #fafafa;
@@ -21,6 +22,11 @@ a {
   text-decoration: none;
   color: #232222;
   font-size: 14px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .flex {
@@ -34,8 +40,40 @@ a {
 }
 
 .container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 1px solid #c9a488;
+  padding: 10px 30px;
+  border-radius: 25px;
+  transition: all 200ms ease-in-out;
+}
+.button:hover {
+  background-color: #c9a488;
+  color: #fafafa;
+}
+
+.title-1 {
+  text-transform: capitalize;
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.title-2 {
+  text-transform: capitalize;
+  font-size: 44px;
+  color: #c9a488;
+  font-weight: 300;
+}
+
+.paragraph {
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 1.77;
 }
 
 @media (max-width: 63.9375em) {
@@ -50,6 +88,9 @@ a {
   }
 }
 
+.header {
+  cursor: default;
+}
 @media (max-width: 63.9375em) {
   .header {
     padding-left: 40px;
@@ -156,4 +197,23 @@ a {
 }
 .fade-out {
   animation: fade-out 300ms ease-in-out forwards;
+}
+
+.hero {
+  padding-left: 230px;
+  padding-right: 230px;
+  padding-top: 50px;
+}
+@media (max-width: 63.9375em) {
+  .hero {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.hero__text {
+  width: 350px;
+}
+.hero__text p:nth-child(2) {
+  margin-top: 13px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

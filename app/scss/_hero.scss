@@ -1,0 +1,21 @@
+.hero {
+  @include breakpoint-down(medium) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  padding-left: 230px;
+  padding-right: 230px;
+  padding-top: 50px;
+
+  &__text {
+    width: 350px;
+    p:nth-child(2) {
+      margin-top: 13px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+  }
+}
