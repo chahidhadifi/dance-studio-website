@@ -2,11 +2,30 @@
   @include breakpoint-down(medium) {
     padding-left: 40px;
     padding-right: 40px;
+    display: block;
+
+    &__image {
+      img {
+        width: 500px;
+        padding-top: 10px;
+        float: right;
+      }
+    }
+
+    &__text {
+      p:nth-child(2) {
+        width: 300px;
+      }
+    }
   }
 
   padding-left: 230px;
   padding-right: 230px;
   padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
   &__text {
     width: 350px;

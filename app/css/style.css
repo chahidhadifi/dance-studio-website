@@ -70,6 +70,13 @@ p {
   font-weight: 300;
 }
 
+.title-3 {
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-size: 13px;
+  color: #c1bebb;
+}
+
 .paragraph {
   font-family: "Lato";
   font-size: 13px;
@@ -203,11 +210,24 @@ p {
   padding-left: 230px;
   padding-right: 230px;
   padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 63.9375em) {
   .hero {
     padding-left: 40px;
     padding-right: 40px;
+    display: block;
+  }
+  .hero__image img {
+    width: 500px;
+    padding-top: 10px;
+    float: right;
+  }
+  .hero__text p:nth-child(2) {
+    width: 300px;
   }
 }
 .hero__text {
@@ -216,4 +236,45 @@ p {
 .hero__text p:nth-child(2) {
   margin-top: 13px;
   margin-bottom: 40px;
+}
+.welcome {
+  background-color: #ffffff;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.welcome__text {
+  width: 500px;
+}
+.welcome__text p[class=title-1] {
+  margin-left: 5px;
+}
+.welcome__text p[class=title-3] {
+  margin: 10px 0;
+}
+.welcome__text p[class=paragraph] {
+  margin-bottom: 35px;
+}
+.welcome__text span {
+  color: #232222 !important;
+}
+.welcome__image {
+  position: relative;
+  margin-left: 45px;
+}
+.welcome__image img:nth-child(1) {
+  margin-top: 100px;
+}
+.welcome__image img:nth-child(2) {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: -45px;
+  right: 0;
+}
+.welcome__image img:nth-child(3) {
+  position: absolute;
+  top: -110px;
+  bottom: 0;
+  left: -40px;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */
