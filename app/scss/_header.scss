@@ -1,7 +1,30 @@
 .header {
-  @include breakpoint-down(medium) {
-    padding-left: 40px;
-    padding-right: 40px;
+  @include breakpoints(mobile) {
+    padding: 0px 35px;
+  }
+
+  @include breakpoints(small) {
+    padding: 0px 35px;
+
+    .header__toggle {
+      display: none;
+    }
+  }
+
+  @include breakpoints(medium) {
+    padding: 0px 100px;
+
+    .header__toggle {
+      display: none;
+    }
+  }
+
+  @include breakpoints(large) {
+    padding: 0px 150px;
+
+    .header__toggle {
+      display: none;
+    }
   }
 
   cursor: default;

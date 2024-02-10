@@ -1,37 +1,96 @@
 .hero {
-  @include breakpoint-down(medium) {
-    padding-left: 40px;
-    padding-right: 40px;
-    display: block;
+  display: flex;
+
+  @include breakpoints(mobile) {
+    flex-direction: column;
+    padding: 0px 30px;
+    padding-top: 40px;
 
     &__image {
+      padding-top: 25px;
       img {
-        width: 500px;
-        padding-top: 10px;
+        width: 100%;
         float: right;
       }
     }
 
     &__text {
       p:nth-child(2) {
-        width: 300px;
+        margin-top: 13px;
+        margin-bottom: 40px;
       }
     }
   }
 
-  padding-left: 230px;
-  padding-right: 230px;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @include breakpoints(small) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    padding-top: 40px;
 
-  &__text {
-    width: 350px;
-    p:nth-child(2) {
-      margin-top: 13px;
-      margin-bottom: 40px;
+    &__image {
+      padding-top: 25px;
+      img {
+        width: 90%;
+        float: right;
+      }
+    }
+
+    &__text {
+      width: 500px;
+      p:nth-child(2) {
+        margin-top: 13px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  @include breakpoints(medium) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    padding-top: 60px;
+
+    &__image {
+      padding-top: 25px;
+      img {
+        width: 100%;
+        float: right;
+      }
+    }
+
+    &__text {
+      width: 350px;
+      p:nth-child(2) {
+        margin-top: 13px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  @include breakpoints(large) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 145px;
+    padding-top: 10px;
+
+    &__image {
+      padding-top: 25px;
+      img {
+        width: 100%;
+        float: right;
+      }
+    }
+
+    &__text {
+      width: 350px;
+      p:nth-child(2) {
+        margin-top: 13px;
+        margin-bottom: 40px;
+      }
     }
   }
 

@@ -87,13 +87,13 @@ p {
 }
 
 .hide-for-mobile {
-  @include breakpoint-down(medium) {
+  @include breakpoints(mobile) {
     display: none;
   }
 }
 
-.hide-for-desktop {
-  @include breakpoint-up(large) {
-    display: none;
-  }
-}
+// .hide-for-desktop {
+//   @include up(large) {
+//     display: none;
+//   }
+// }
