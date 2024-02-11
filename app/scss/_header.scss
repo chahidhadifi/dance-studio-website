@@ -1,6 +1,16 @@
 .header {
   @include breakpoints(mobile) {
     padding: 0px 35px;
+
+    .header {
+      &__links {
+        display: none;
+      }
+
+      &__icons {
+        display: none;
+      }
+    }
   }
 
   @include breakpoints(small) {
