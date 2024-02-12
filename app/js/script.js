@@ -35,3 +35,14 @@ headerToggle.addEventListener("click", () => {
     body.setAttribute("style", "overflow: hidden");
   }
 });
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768 && menu.classList.contains("fade-in")) {
+    openMenu.setAttribute("style", "display: block");
+    closeMenu.setAttribute("style", "display: none");
+    menu.classList.add("fade-out");
+    menu.classList.remove("fade-in");
+    menu.setAttribute("style", "display: none");
+    body.setAttribute("style", "overflow: auto");
+  }
+});

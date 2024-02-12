@@ -1,0 +1,71 @@
+.videos {
+  span {
+    color: $color-0 !important;
+  }
+
+  @include breakpoints(mobile) {
+    padding: 40px 30px;
+
+    &__title {
+      padding-bottom: 30px;
+      p {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__images {
+      text-align: center;
+      img {
+        width: 65%;
+      }
+    }
+  }
+
+  @include breakpoints(small) {
+    p {
+      color: red;
+    }
+    text-align: center;
+    padding: 40px 30px;
+
+    &__title {
+      padding-bottom: 30px;
+      p {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        padding: 4px 4px;
+      }
+
+      div:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 30%;
+        }
+      }
+
+      div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
