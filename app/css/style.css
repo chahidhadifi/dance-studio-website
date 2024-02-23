@@ -61,7 +61,6 @@ p {
   text-transform: capitalize;
   font-size: 44px;
   font-weight: 600;
-  text-wrap: nowrap;
 }
 
 .title-2 {
@@ -69,7 +68,6 @@ p {
   font-size: 44px;
   color: #c9a488;
   font-weight: 300;
-  text-wrap: nowrap;
 }
 
 .title-3 {
@@ -77,6 +75,15 @@ p {
   font-family: "Lato";
   font-size: 13px;
   color: #c1bebb;
+}
+
+.title-4 {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.title-5 {
+  color: #c9a488;
 }
 
 .paragraph {
@@ -545,6 +552,11 @@ p {
   }
   .videos__images img {
     width: 65%;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+  .videos__images img:hover {
+    opacity: 0.5;
   }
   .videos__button {
     display: flex;
@@ -571,6 +583,11 @@ p {
   }
   .videos__images img {
     padding: 4px 4px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+  .videos__images img:hover {
+    opacity: 0.5;
   }
   .videos__images div:nth-child(1) {
     display: flex;
@@ -622,6 +639,11 @@ p {
   }
   .videos__images img {
     padding: 4px 4px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+  .videos__images img:hover {
+    opacity: 0.5;
   }
   .videos__images div:nth-child(1) {
     display: flex;
@@ -673,6 +695,11 @@ p {
   }
   .videos__images img {
     padding: 4px 4px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+  .videos__images img:hover {
+    opacity: 0.5;
   }
   .videos__images div:nth-child(1) {
     display: flex;
@@ -697,5 +724,141 @@ p {
     align-items: center;
     justify-content: center;
     padding: 20px 0;
+  }
+}
+
+.products {
+  background-color: #ffffff;
+}
+.products span {
+  color: #232222 !important;
+}
+.products__card {
+  padding-bottom: 30px;
+}
+.products__card img {
+  border: 1px solid #c1bebb;
+  border-radius: 10px;
+  padding: 31px 40px;
+}
+.products__card__info {
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.products__button {
+  padding-top: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .products {
+    padding: 40px 30px;
+  }
+  .products__title {
+    margin-bottom: 40px;
+  }
+  .products__title p {
+    display: flex;
+    flex-direction: column;
+  }
+  .products__card {
+    text-align: center;
+  }
+  .products__card img {
+    width: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .products {
+    padding: 40px 30px;
+  }
+  .products__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .products__title p {
+    display: flex;
+    flex-direction: column;
+  }
+  .products__card {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .products__card img {
+    width: 200px;
+    height: 200px;
+  }
+  .products__card div:nth-child(4) .products__card:nth-child(4) {
+    padding: 0 -90px;
+  }
+  .products__cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .products {
+    padding: 40px 30px;
+  }
+  .products__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .products__title span {
+    padding-left: 8px;
+  }
+  .products__card {
+    text-align: center;
+  }
+  .products__card img {
+    width: 200px;
+    height: 200px;
+  }
+  .products__card div:nth-child(4) .products__card:nth-child(4) img {
+    width: 10px;
+  }
+  .products__cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .products {
+    padding: 40px 30px;
+  }
+  .products__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .products__title span {
+    padding-left: 8px;
+  }
+  .products__card {
+    text-align: center;
+  }
+  .products__card img {
+    width: 200px;
+    height: 200px;
+  }
+  .products__card div:nth-child(4) .products__card:nth-child(4) img {
+    width: 100px;
+  }
+  .products__cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .products__cards .products__card {
+    margin-right: 50px;
+  }
+  .products__cards .products__card img:hover {
+    opacity: 0.7;
   }
 }/*# sourceMappingURL=style.css.map */

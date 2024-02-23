@@ -1,0 +1,168 @@
+.products {
+  background-color: #ffffff;
+
+  span {
+    color: $color-0 !important;
+  }
+
+  &__card {
+    padding-bottom: 30px;
+
+    img {
+      border: 1px solid $color-2;
+      border-radius: 10px;
+      padding: 31px 40px;
+    }
+
+    &__info {
+      padding-left: 10px;
+      padding-top: 8px;
+    }
+  }
+
+  &__button {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  @include breakpoints(mobile) {
+    padding: 40px 30px;
+
+    &__title {
+      margin-bottom: 40px;
+      p {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__card {
+      text-align: center;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  @include breakpoints(small) {
+    padding: 40px 30px;
+    &__title {
+      text-align: center;
+      margin-bottom: 40px;
+
+      p {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__card {
+      text-align: center;
+      margin-right: 10px;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      div:nth-child(4) {
+        .products__card:nth-child(4) {
+          padding: 0 -90px;
+        }
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  }
+
+  @include breakpoints(medium) {
+    padding: 40px 30px;
+    &__title {
+      text-align: center;
+      margin-bottom: 40px;
+
+      span {
+        padding-left: 8px;
+      }
+    }
+
+    &__card {
+      text-align: center;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      div:nth-child(4) {
+        .products__card:nth-child(4) {
+          img {
+            width: 10px;
+          }
+        }
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  }
+
+  @include breakpoints(large) {
+    padding: 40px 30px;
+    &__title {
+      text-align: center;
+      margin-bottom: 40px;
+
+      span {
+        padding-left: 8px;
+      }
+    }
+
+    &__card {
+      text-align: center;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      div:nth-child(4) {
+        .products__card:nth-child(4) {
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: center;
+      flex-direction: row;
+
+      .products__card {
+        margin-right: 50px;
+
+        img {
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

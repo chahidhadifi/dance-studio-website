@@ -18,6 +18,13 @@
       text-align: center;
       img {
         width: 65%;
+        opacity: 1;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
 
@@ -47,6 +54,13 @@
 
       img {
         padding: 4px 4px;
+        opacity: 1;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
 
       div:nth-child(1) {
@@ -106,6 +120,13 @@
 
       img {
         padding: 4px 4px;
+        opacity: 1;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
 
       div:nth-child(1) {
@@ -165,6 +186,13 @@
 
       img {
         padding: 4px 4px;
+        opacity: 1;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
 
       div:nth-child(1) {
